@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center" android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitImageView android:layout_gravity="center" android:background="@drawable/img_inter_default" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="298" app:gon_layout_width="420" />
+    <com.dangbei.launcher.control.view.FitTextView android:textStyle="bold" android:textColor="#fff1f1f1" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网络开小差了" app:gon_layout_marginTop="48" app:gon_textSize="36" />
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="#99f1f1f1" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请检查是否已连接网络" app:gon_layout_marginTop="24" app:gon_textSize="36" />
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:gravity="center" android:layout_gravity="center" android:id="@id/layout_error_lianjie" android:background="@drawable/dialog_edit_name_item_bg_nor" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重新加载" app:gon_layout_height="90" app:gon_layout_marginTop="60" app:gon_layout_width="300" app:gon_textSize="36" />
+</com.dangbei.launcher.control.layout.FitLinearLayout>

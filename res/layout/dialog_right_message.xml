@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="right|bottom" android:orientation="horizontal" android:id="@id/ll_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/cancel_buttom" android:background="@drawable/right_message_cancel_buttom" android:padding="1.0px" android:focusable="true" android:nextFocusRight="@id/fl_message" android:layout_width="125.0px" android:layout_height="125.0px" android:scaleType="fitXY" />
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/fl_message" android:padding="1.0px" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusLeft="@id/cancel_buttom" android:clipChildren="false" android:clipToPadding="false" android:layout_width="480.0px" android:layout_height="123.0px" android:layout_marginLeft="20.0px" android:layout_marginRight="20.0px">
+        <TextView android:textSize="28.0px" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/message" android:background="@drawable/text_bg" android:paddingLeft="40.0px" android:paddingRight="40.0px" android:layout_width="478.0px" android:layout_height="121.0px" android:lines="2" />
+    </FrameLayout>
+</LinearLayout>

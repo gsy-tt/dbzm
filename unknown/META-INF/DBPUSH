@@ -1,0 +1,5 @@
+generateBy=RapidMetaInfPlugin
+pluginUrl=https://github.com/wangjiegulu/RapidMetaInfPlugin
+archiveName=dbpush
+archiveVersion=1.5.5-SNAPSHOT
+publishMode=false

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitSelectTypeView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="220" app:gon_layout_width="254"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <com.dangbei.launcher.control.view.FitSelectTypeView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="220" app:gon_layout_width="254"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <com.dangbei.launcher.control.view.FitSelectTypeView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="220" app:gon_layout_width="254"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <com.dangbei.launcher.control.view.FitSelectTypeView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="220" app:gon_layout_width="254"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</com.dangbei.launcher.control.layout.FitLinearLayout>

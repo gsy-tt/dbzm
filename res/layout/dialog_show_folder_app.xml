@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitRelativeLayout android:id="@id/dialog_site_edit_root_view_frl" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.layout.FitRelativeLayout android:id="@id/dialog_site_edit_root_frl" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_marginLeft="205" app:gon_layout_marginTop="146">
+        <com.dangbei.launcher.control.view.FitTextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/dialog_site_edit_tab1_ftv" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="选择应用程序" android:layout_centerHorizontal="true" app:gon_layout_height="90" app:gon_textSize="36" />
+        <com.dangbei.launcher.control.view.FitImageView android:background="@drawable/dialog_show_folder_app_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="670" app:gon_layout_marginTop="90" app:gon_layout_width="1510" />
+        <com.dangbei.launcher.control.view.FitHorizontalRecyclerView android:id="@id/dialog_site_edit_rv" android:layout_width="fill_parent" android:layout_height="fill_parent" app:gon_layout_height="670" app:gon_layout_marginTop="90" app:gon_layout_width="1510" />
+    </com.dangbei.launcher.control.layout.FitRelativeLayout>
+</com.dangbei.launcher.control.layout.FitRelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.palaemon.layout.DBRelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.yggdrasill.filemanager.view.FileManagerNoFileView android:id="@id/file_manager_activity_video_picture_no_file_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dangbei.yggdrasill.filemanager.view.FileManagerFileTitleView android:id="@id/file_manager_activity_video_picture_list_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.dangbei.palaemon.layout.DBVerticalRecyclerView android:id="@id/file_manager_activity_video_picture_list_rv" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" app:gon_layout_marginTop="140" app:gon_layout_width="1812" app:gon_paddingLeft="60" app:gon_paddingRight="60" app:pal_space_bottom="40" app:pal_space_top="40" />
+</com.dangbei.palaemon.layout.DBRelativeLayout>

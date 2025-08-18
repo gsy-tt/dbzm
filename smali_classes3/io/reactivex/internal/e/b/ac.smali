@@ -1,0 +1,105 @@
+.class public final Lio/reactivex/internal/e/b/ac;
+.super Lio/reactivex/n;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lio/reactivex/n<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final aUj:Ljava/util/concurrent/Callable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/Callable<",
+            "+",
+            "Lio/reactivex/s<",
+            "+TT;>;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/concurrent/Callable;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/concurrent/Callable<",
+            "+",
+            "Lio/reactivex/s<",
+            "+TT;>;>;)V"
+        }
+    .end annotation
+
+    .line 25
+    invoke-direct {p0}, Lio/reactivex/n;-><init>()V
+
+    .line 26
+    iput-object p1, p0, Lio/reactivex/internal/e/b/ac;->aUj:Ljava/util/concurrent/Callable;
+
+    .line 27
+    return-void
+.end method
+
+
+# virtual methods
+.method public subscribeActual(Lio/reactivex/u;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/reactivex/u<",
+            "-TT;>;)V"
+        }
+    .end annotation
+
+    .line 32
+    :try_start_0
+    iget-object v0, p0, Lio/reactivex/internal/e/b/ac;->aUj:Ljava/util/concurrent/Callable;
+
+    invoke-interface {v0}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
+
+    move-result-object v0
+
+    const-string v1, "null ObservableSource supplied"
+
+    invoke-static {v0, v1}, Lio/reactivex/internal/b/b;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lio/reactivex/s;
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 37
+    nop
+
+    .line 39
+    invoke-interface {v0, p1}, Lio/reactivex/s;->subscribe(Lio/reactivex/u;)V
+
+    .line 40
+    return-void
+
+    .line 33
+    :catch_0
+    move-exception v0
+
+    .line 34
+    invoke-static {v0}, Lio/reactivex/c/b;->throwIfFatal(Ljava/lang/Throwable;)V
+
+    .line 35
+    invoke-static {v0, p1}, Lio/reactivex/internal/a/d;->a(Ljava/lang/Throwable;Lio/reactivex/u;)V
+
+    .line 36
+    return-void
+.end method

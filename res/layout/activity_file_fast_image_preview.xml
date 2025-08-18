@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitRelativeLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitImageView android:id="@id/img_wallpaper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+    <android.support.v4.view.ViewPager android:id="@id/image_viewPage" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dangbei.launcher.control.view.FitImageView android:id="@id/arrow_left" android:background="@drawable/arrow_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:gon_layout_height="70" app:gon_layout_marginLeft="24" app:gon_layout_width="40" />
+    <com.dangbei.launcher.control.view.FitImageView android:id="@id/arrow_right" android:background="@drawable/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:gon_layout_height="70" app:gon_layout_marginRight="24" app:gon_layout_width="40" />
+    <com.dangbei.launcher.control.layout.FitRelativeLayout android:background="@drawable/file_fast_preview_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:gon_layout_height="68" app:gon_layout_marginBottom="60" app:gon_layout_marginRight="120" app:gon_layout_width="120">
+        <com.dangbei.launcher.control.layout.FitRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:id="@id/position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_centerVertical="true" app:gon_textSize="48" />
+            <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:id="@id/line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:layout_toRightOf="@id/position" android:layout_alignBottom="@id/position" app:gon_layout_marginBottom="5" app:gon_textSize="30" />
+            <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:id="@id/num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" android:layout_toRightOf="@id/line" android:layout_alignBottom="@id/position" app:gon_layout_marginBottom="5" app:gon_textSize="30" />
+        </com.dangbei.launcher.control.layout.FitRelativeLayout>
+    </com.dangbei.launcher.control.layout.FitRelativeLayout>
+</com.dangbei.launcher.control.layout.FitRelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.calendar.control.view.XRelativeLayout android:gravity="center_vertical" android:background="@color/calendar_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.calendar.control.view.XFrameLayout android:id="@id/container1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="721" app:gon_layout_marginLeft="154" app:gon_layout_width="340">
+        <com.dangbei.calendar.ui.CityRecyclerView android:layout_gravity="center_horizontal" android:id="@id/dialog_city_picker_province" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="721" app:gon_layout_width="240" app:pal_space_bottom="309" app:pal_space_top="309" />
+    </com.dangbei.calendar.control.view.XFrameLayout>
+    <com.dangbei.calendar.control.view.XView android:id="@id/line1" android:background="@drawable/shape_gradient_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/container1" app:gon_layout_height="720" app:gon_layout_width="1" />
+    <com.dangbei.calendar.control.view.XFrameLayout android:id="@id/container2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/line1" app:gon_layout_height="721" app:gon_layout_width="340">
+        <com.dangbei.calendar.ui.CityRecyclerView android:layout_gravity="center_horizontal" android:id="@id/dialog_city_picker_city" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="721" app:gon_layout_width="240" app:pal_space_bottom="309" app:pal_space_top="309" />
+    </com.dangbei.calendar.control.view.XFrameLayout>
+    <com.dangbei.calendar.control.view.XView android:id="@id/line2" android:background="@drawable/shape_gradient_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/container2" app:gon_layout_height="720" app:gon_layout_width="1" />
+    <com.dangbei.calendar.control.view.XFrameLayout android:id="@id/container3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/line2" app:gon_layout_height="721" app:gon_layout_width="340">
+        <com.dangbei.calendar.ui.CityRecyclerView android:layout_gravity="center_horizontal" android:id="@id/dialog_city_picker_district" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="721" app:gon_layout_width="240" app:pal_space_bottom="309" app:pal_space_top="309" />
+    </com.dangbei.calendar.control.view.XFrameLayout>
+    <com.dangbei.calendar.control.view.XFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/container3" app:gon_layout_height="721" app:gon_layout_marginLeft="120" app:gon_layout_width="370">
+        <com.dangbei.calendar.control.view.XTextView android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_city_picker_click" android:background="@drawable/shape_joke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" app:gon_layout_height="100" app:gon_layout_width="370" app:gon_textSize="40" />
+    </com.dangbei.calendar.control.view.XFrameLayout>
+</com.dangbei.calendar.control.view.XRelativeLayout>

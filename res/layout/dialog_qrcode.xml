@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitRelativeLayout android:id="@id/dialog_password_root_frl" android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="#99f1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="将手机中的文件传到电视" android:layout_centerHorizontal="true" app:gon_layout_marginTop="120" app:gon_textSize="36" />
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="#99f1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打开手机软件，扫描以下二维码，即可传文件" android:layout_centerHorizontal="true" app:gon_layout_marginTop="180" app:gon_textSize="30" />
+    <com.dangbei.launcher.control.layout.FitRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:gon_layout_height="540" app:gon_layout_marginTop="270" app:gon_layout_width="540">
+        <com.dangbei.launcher.control.view.FitImageView android:background="@drawable/activity_fast_file_zxing_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.dangbei.launcher.control.view.FitImageView android:id="@id/dialog_qrcode_fiv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" app:gon_layout_height="480" app:gon_layout_width="480" />
+    </com.dangbei.launcher.control.layout.FitRelativeLayout>
+    <com.dangbei.launcher.control.view.FitView android:background="#1af1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:gon_layout_height="1" app:gon_layout_marginTop="870" app:gon_layout_width="540" />
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="#99f1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支持传送照片、视频、安装文件" android:layout_centerHorizontal="true" app:gon_layout_marginTop="901" app:gon_textSize="24" />
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="#99f1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请确保您的手机和电视，处于同一网络环境下" android:layout_centerHorizontal="true" app:gon_layout_marginTop="943" app:gon_textSize="24" />
+    <com.dangbei.launcher.control.view.FitView android:background="#1af1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:gon_layout_height="1" app:gon_layout_marginTop="997" app:gon_layout_width="540" />
+</com.dangbei.launcher.control.layout.FitRelativeLayout>

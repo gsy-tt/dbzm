@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.calendar.control.view.XRelativeLayout android:id="@id/activity_dbcalendar_background" android:background="@color/calendar_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.calendar.control.view.XImageView android:id="@id/activity_dbcalendar_background_img" android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <com.dangbei.calendar.control.view.XImageView android:id="@id/activity_dbcalendar_background_img2" android:background="#66121212" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dangbei.calendar.control.view.XRelativeLayout android:orientation="vertical" android:id="@id/activity_dbcalendar_huangli" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="759" app:gon_layout_marginLeft="84" app:gon_layout_marginTop="136" app:gon_layout_width="760">
+        <com.dangbei.calendar.control.view.XImageView android:id="@id/activity_dbcalendar_huangli_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <main.module.HuangliView android:id="@id/laohuangliView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/weatherView" app:gon_layout_height="315" app:gon_layout_width="760" />
+        <com.dangbei.calendar.control.view.XImageView android:id="@id/weatherView_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="444" app:gon_layout_width="760" />
+        <main.module.WeatherView android:id="@id/weatherView" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="444" app:gon_layout_width="760" />
+    </com.dangbei.calendar.control.view.XRelativeLayout>
+    <com.dangbei.palaemon.view.DangbeiPalaemonFocusPaintViewChild android:layout_width="fill_parent" android:layout_height="fill_parent" app:gon_layout_width="952" />
+    <com.dangbei.calendar.control.view.XLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:gon_layout_marginRight="140" app:gon_layout_marginTop="100" app:gon_layout_width="828">
+        <com.dangbei.calendar.control.view.XLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="7.0" app:gon_layout_height="64">
+            <com.dangbei.calendar.control.view.XTextView android:textColor="@color/weeksColor" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="一" android:layout_weight="1.0" app:gon_textSize="30" />
+            <com.dangbei.calendar.control.view.XTextView android:textColor="@color/weeksColor" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="二" android:layout_weight="1.0" app:gon_textSize="30" />
+            <com.dangbei.calendar.control.view.XTextView android:textColor="@color/weeksColor" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="三" android:layout_weight="1.0" app:gon_textSize="30" />
+            <com.dangbei.calendar.control.view.XTextView android:textColor="@color/weeksColor" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="四" android:layout_weight="1.0" app:gon_textSize="30" />
+            <com.dangbei.calendar.control.view.XTextView android:textColor="@color/weeksColor" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="五" android:layout_weight="1.0" app:gon_textSize="30" />
+            <com.dangbei.calendar.control.view.XTextView android:textColor="@color/weeksColor" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="六" android:layout_weight="1.0" app:gon_textSize="30" />
+            <com.dangbei.calendar.control.view.XTextView android:textColor="@color/weeksColor" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="日" android:layout_weight="1.0" app:gon_textSize="30" />
+        </com.dangbei.calendar.control.view.XLinearLayout>
+        <com.dangbei.calendar.control.view.XView android:background="@color/weeksColor" android:layout_width="fill_parent" android:layout_height="wrap_content" app:gon_layout_height="1" app:gon_layout_marginTop="22" />
+        <com.dangbei.calendar.control.view.XRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.dangbei.calendar.control.view.XImageView android:id="@id/calendar_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:gon_layout_height="380" app:gon_layout_width="860" app:srcCompat="@drawable/dbcalendar_default_bg" />
+            <com.dangbei.calendar.control.view.XVerticalRecyclerView android:id="@id/activity_dbcalendar_calendar_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.dangbei.calendar.control.view.XRelativeLayout>
+    </com.dangbei.calendar.control.view.XLinearLayout>
+</com.dangbei.calendar.control.view.XRelativeLayout>

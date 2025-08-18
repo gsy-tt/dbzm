@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.palaemon.layout.DBRelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.yggdrasill.filemanager.view.FileManagerTitleView android:id="@id/activity_file_manager_usb_list_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.dangbei.yggdrasill.filemanager.view.YggDrasillHorizontalRecyclerView android:id="@id/activity_file_manager_usb_list_rv" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:gon_layout_height="620" app:pal_space_left="100" app:pal_space_right="100" />
+</com.dangbei.palaemon.layout.DBRelativeLayout>

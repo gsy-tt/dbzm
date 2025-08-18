@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.flames.ui.base.view.FlaRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:gon_layout_height="70"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.flames.ui.base.view.FlaImageView android:id="@id/fla_view_main_message_item_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:gon_layout_height="44" app:gon_layout_width="44" />
+    <com.dangbei.flames.ui.base.view.FlaTextView android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/fla_view_main_message_item_name_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_toRightOf="@id/fla_view_main_message_item_icon_iv" android:layout_centerVertical="true" app:gon_layout_marginLeft="4" app:gon_textSize="28" />
+</com.dangbei.flames.ui.base.view.FlaRelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.calendar.control.view.XRelativeLayout android:id="@id/item_days_detail_xrl" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:gon_layout_height="96" app:gon_layout_width="96"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.calendar.control.view.XTextView android:textColor="#ffffffff" android:id="@id/item_days_detail_yangli_xtv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:gon_textSize="40" />
+    <com.dangbei.calendar.control.view.XTextView android:textColor="#7fffffff" android:id="@id/item_days_detail_yinli_xtv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:gon_layout_marginBottom="11" app:gon_layout_marginTop="50" app:gon_textSize="20" />
+</com.dangbei.calendar.control.view.XRelativeLayout>

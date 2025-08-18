@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.flames.ui.base.view.FlaImageView android:id="@id/fla_view_last_next_show_last_iv" android:background="@drawable/fla_arrow_left" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:gon_layout_height="180" app:gon_layout_width="95" />
+    <com.dangbei.flames.ui.base.view.FlaImageView android:id="@id/fla_view_last_next_show_next_iv" android:background="@drawable/fla_arrow_right" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:gon_layout_height="180" app:gon_layout_width="95" />
+</merge>

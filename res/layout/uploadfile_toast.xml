@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitRelativeLayout android:background="@drawable/uploadfile_toast_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="100" app:gon_layout_width="300"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_marginLeft="24" app:gon_layout_marginTop="22" app:gon_textSize="30" />
+    <com.dangbei.gonzalez.view.GonProgressBar android:id="@id/pb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="100" android:progress="40" android:indeterminateOnly="false" android:progressDrawable="@drawable/uploadfile_progressbar_horizontal" app:gon_layout_height="12" app:gon_layout_marginLeft="24" app:gon_layout_marginTop="66" app:gon_layout_width="252" style="@android:style/Widget.ProgressBar.Horizontal" />
+</com.dangbei.launcher.control.layout.FitRelativeLayout>

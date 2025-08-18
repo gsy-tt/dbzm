@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.palaemon.layout.DBLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/dialog_view" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" app:gon_layout_height="1080" app:gon_layout_width="1920"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.palaemon.view.DBImageView android:id="@id/img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yggdrasill_base_icon_loading_progress" app:gon_layout_height="150" app:gon_layout_width="150" />
+    <com.dangbei.palaemon.view.DBTextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/tipTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+</com.dangbei.palaemon.layout.DBLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center_vertical" android:layout_gravity="right|center" android:orientation="horizontal" android:id="@id/ssssssss" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="@color/select_set_item" android:id="@id/layout_fit_settiing_item_switch_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" app:gon_layout_marginRight="16" app:gon_textSize="36" />
+    <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_fit_setting_item_tv_right_arrow" android:background="@drawable/selector_set_icon_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" app:gon_layout_height="42" app:gon_layout_width="42" />
+</com.dangbei.launcher.control.layout.FitLinearLayout>

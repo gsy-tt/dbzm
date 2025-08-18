@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitFrameLayout android:id="@id/layout_first_welcome_bg" android:background="#e6121212" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/up_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_marginTop="60">
+        <com.dangbei.launcher.control.view.FitImageView android:id="@id/up_1" android:background="@drawable/chevrons_up_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="20" app:gon_layout_width="40" />
+        <com.dangbei.launcher.control.view.FitImageView android:id="@id/up_2" android:background="@drawable/chevrons_up_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="20" app:gon_layout_width="40" />
+        <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="导航栏搬到这里了" app:gon_layout_marginTop="36" app:gon_textSize="36" />
+    </com.dangbei.launcher.control.layout.FitLinearLayout>
+    <com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center_horizontal" android:layout_gravity="center|bottom" android:orientation="vertical" android:id="@id/down_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_marginBottom="60">
+        <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="向下查看所有应用" app:gon_layout_marginBottom="36" app:gon_textSize="36" />
+        <com.dangbei.launcher.control.view.FitImageView android:id="@id/down_1" android:background="@drawable/chevrons_down_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="20" app:gon_layout_width="40" />
+        <com.dangbei.launcher.control.view.FitImageView android:id="@id/down_2" android:background="@drawable/chevrons_down_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="20" app:gon_layout_width="40" />
+    </com.dangbei.launcher.control.layout.FitLinearLayout>
+</com.dangbei.launcher.control.layout.FitFrameLayout>

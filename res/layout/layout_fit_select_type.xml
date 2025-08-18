@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitImageView android:layout_gravity="right|top" android:id="@id/img_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_set_wallpaper_like" app:gon_layout_height="36" app:gon_layout_marginRight="10" app:gon_layout_marginTop="10" app:gon_layout_width="36" />
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="@color/select_set_item" android:layout_gravity="center" android:id="@id/tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_textSize="36" />
+</merge>

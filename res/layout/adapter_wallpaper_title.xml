@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitFrameLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="121" app:gon_layout_width="192"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.gonzalez.view.GonView android:id="@id/wallpaper_title_line_view" android:background="#1affffff" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="1.0px" app:gon_layout_width="180" />
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="#80ffffff" android:gravity="center" android:id="@id/adpater_wallpaper_title_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="120" app:gon_layout_width="180" app:gon_textSize="32" />
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="#80ffffff" android:gravity="center" android:id="@id/adpater_wallpaper_title_name_tv2" android:background="@drawable/adapter_wallpaper_title_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="120" app:gon_layout_width="192" app:gon_textSize="32" />
+    <com.dangbei.gonzalez.view.GonView android:layout_gravity="bottom" android:background="#1affffff" android:layout_width="wrap_content" android:layout_height="1.0px" app:gon_layout_width="180" />
+</com.dangbei.launcher.control.layout.FitFrameLayout>

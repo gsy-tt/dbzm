@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitTextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动换壁纸" app:gon_layout_marginTop="60" style="@style/set_title_styel" />
+    <com.dangbei.launcher.control.view.FitSettingItemFrameView android:id="@id/aotuWallpaperSetOpen" app:gon_layout_marginTop="48" app:setting_item_icon_focus="@drawable/icon_set_wallpaper_foc" app:setting_item_icon_nor="@drawable/icon_set_wallpaper_nor" app:setting_item_title="开启自动换壁纸" app:setting_item_type="Button" style="@style/set_item_styel" />
+    <com.dangbei.launcher.control.view.FitSettingItemFrameView android:id="@id/aotuWallpaperSetLike" app:gon_layout_marginBottom="20" app:setting_item_icon_focus="@drawable/icon_set_wallpaper_lick_foc" app:setting_item_icon_nor="@drawable/icon_set_wallpaper_like_nor" app:setting_item_title="壁纸喜好" app:setting_item_type="OneArrowhead" style="@style/set_item_styel" />
+</com.dangbei.launcher.control.layout.FitLinearLayout>

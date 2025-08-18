@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.flames.ui.base.view.FlaRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.flames.ui.base.view.FlaViewPager android:id="@id/fla_activity_message_detail_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dangbei.flames.ui.detail.view.MessageDetailItemView android:id="@id/fla_activity_message_detail_item_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:gon_layout_height="300" app:gon_layout_marginTop="780" />
+    <com.dangbei.flames.ui.detail.view.LastAndNextView android:id="@id/fla_activity_message_detail_control_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.dangbei.flames.ui.base.view.FlaRelativeLayout>

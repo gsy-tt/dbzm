@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bbbbbb" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.widget.SwitchView android:id="@id/layout_fit_setting_item_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="48" app:gon_layout_width="84" />
+</com.dangbei.launcher.control.layout.FitLinearLayout>

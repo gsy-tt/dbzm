@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.widget.shimmer.ShimmerLayout android:id="@id/layout_general_item_sfl" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shimmer_auto_start="false">
+        <com.dangbei.launcher.control.layout.FitRelativeLayout android:id="@id/layout_general_item_square_rl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/app_small_foc" app:gon_layout_height="266">
+            <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_general_item_icon_iv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" app:gon_layout_height="150" app:gon_layout_marginTop="41" app:gon_layout_width="150" />
+            <include android:id="@id/layout_first_general_item_folder_rl" layout="@layout/layout_general_folder" />
+            <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:id="@id/layout_general_item_subscript_tv" android:background="@drawable/shape_subscript" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:gon_layout_height="34" app:gon_layout_marginRight="44" app:gon_layout_marginTop="24" app:gon_paddingLeft="10" app:gon_paddingRight="10" app:gon_textSize="26" />
+        </com.dangbei.launcher.control.layout.FitRelativeLayout>
+    </com.dangbei.launcher.widget.shimmer.ShimmerLayout>
+    <com.dangbei.launcher.control.view.FitMarqueeTextView android:textColor="#fff1f1f1" android:id="@id/layout_general_item_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:gon_layout_marginTop="208" app:gon_textSize="28" />
+    <com.dangbei.launcher.control.view.FitMarqueeTextView android:textColor="#ff333333" android:gravity="center_horizontal" android:id="@id/layout_first_general_focus_title_tv" android:background="@drawable/app_small_text_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lines="1" android:layout_centerHorizontal="true" app:gon_layout_height="116" app:gon_layout_marginTop="208" app:gon_layout_width="230" app:gon_paddingLeft="30" app:gon_paddingRight="30" app:gon_paddingTop="25" app:gon_textSize="32" />
+</merge>

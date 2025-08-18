@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.gonzalez.layout.GonConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:gon_layout_height="100"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="#99f2f2f2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选取网络" app:gon_layout_marginLeft="42" app:gon_layout_marginTop="40" app:gon_textSize="36" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.dangbei.gonzalez.layout.GonConstraintLayout>

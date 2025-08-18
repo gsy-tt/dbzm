@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/fitLinearLayout" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitTextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="屏保设置" app:gon_layout_marginTop="60" style="@style/set_title_styel" />
+    <com.dangbei.launcher.control.view.FitSettingItemFrameView android:id="@id/selectScreensaverState" app:gon_layout_marginTop="48" app:setting_item_icon_focus="@drawable/icon_set_screensaver_foc" app:setting_item_icon_nor="@drawable/icon_set_screensaver_nor" app:setting_item_title="开启屏保" app:setting_item_type="OneArrowhead" style="@style/set_item_styel" />
+    <com.dangbei.launcher.control.view.FitSettingItemFrameView android:id="@id/onClickByMyScreensaver" app:setting_item_icon_focus="@drawable/icon_set_custom_foc" app:setting_item_icon_nor="@drawable/icon_set_custom_nor" app:setting_item_title="自定义屏保" app:setting_item_type="OneArrowhead" style="@style/set_item_styel" />
+    <com.dangbei.launcher.control.view.FitSettingItemFrameView android:id="@id/onlinePictureItem" app:gon_layout_marginBottom="20" app:setting_item_icon_focus="@drawable/icon_set_online_foc" app:setting_item_icon_nor="@drawable/icon_set_online_nor" app:setting_item_title="在线图片" app:setting_item_type="Button" style="@style/set_item_styel" />
+</com.dangbei.launcher.control.layout.FitLinearLayout>

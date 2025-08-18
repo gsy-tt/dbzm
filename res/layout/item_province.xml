@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.calendar.control.view.XRelativeLayout android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:gon_layout_height="103"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.calendar.control.view.XTextView android:textColor="#44ffffff" android:id="@id/item_province_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:gon_textSize="24" />
+</com.dangbei.calendar.control.view.XRelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.ui.main.viewer.AutoWallpaperImageView android:id="@id/activity_main_background_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dangbei.launcher.control.view.FitView android:id="@id/activity_mask_iv" android:background="#66121212" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dangbei.launcher.widget.viewpage.ViewPager android:id="@id/activity_main_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

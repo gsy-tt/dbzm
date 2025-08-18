@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.calendar.control.view.XLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.calendar.control.view.XTextView android:textColor="@color/colorWhite" android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/calendar_list_item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="120" app:gon_textSize="32" />
+    <com.dangbei.calendar.control.view.XRelativeLayout android:id="@id/calendar_list_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.dangbei.calendar.control.view.XLinearLayout>

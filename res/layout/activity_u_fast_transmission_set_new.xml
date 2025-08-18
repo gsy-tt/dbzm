@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:gon_layout_marginLeft="210" app:gon_layout_marginRight="210" app:gon_layout_marginTop="60">
+        <com.dangbei.launcher.control.view.FitTextView android:textStyle="bold" android:textColor="#99f1f1f1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="我的U盘" android:layout_weight="1.0" app:gon_textSize="42" />
+        <com.dangbei.launcher.control.layout.FitFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/layout_u_transmission_ok" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按" app:gon_layout_marginLeft="210" app:gon_textSize="30" />
+                <com.dangbei.launcher.control.view.FitImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_comment_ok" app:gon_layout_height="30" app:gon_layout_marginLeft="6" app:gon_layout_marginRight="6" app:gon_layout_width="30" />
+                <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认键勾选图片" app:gon_textSize="30" />
+            </com.dangbei.launcher.control.layout.FitLinearLayout>
+            <com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/layout_u_transmission_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按" app:gon_layout_marginLeft="210" app:gon_textSize="30" />
+                <com.dangbei.launcher.control.view.FitImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_comment_back" app:gon_layout_height="30" app:gon_layout_marginLeft="6" app:gon_layout_marginRight="6" app:gon_layout_width="30" />
+                <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="返回键添加至壁纸列表" app:gon_textSize="30" />
+            </com.dangbei.launcher.control.layout.FitLinearLayout>
+        </com.dangbei.launcher.control.layout.FitFrameLayout>
+    </com.dangbei.launcher.control.layout.FitLinearLayout>
+    <com.dangbei.launcher.control.view.FitVerticalRecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:gon_layout_marginLeft="198" app:gon_layout_marginRight="198" app:gon_paddingTop="28" />
+</com.dangbei.launcher.control.layout.FitLinearLayout>

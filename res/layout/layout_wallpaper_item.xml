@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.widget.shimmer.ShimmerLayout android:id="@id/layout_general_item_sfl" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shimmer_auto_start="false">
+        <com.dangbei.launcher.control.view.FitImageView android:layout_gravity="center" android:id="@id/adapter_wallpaper_item_content_iv1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.dangbei.launcher.control.view.FitTextView android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="right|top" android:id="@id/adapter_wallpaper_item_mark_iv1" android:background="@drawable/shape_wallpaper_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:text="当前" app:gon_layout_height="38" app:gon_layout_width="75" app:gon_textSize="24" />
+        <com.dangbei.launcher.control.view.FitImageView android:layout_gravity="right|top" android:id="@id/wallpaper_select_tag_im" android:background="@drawable/icon_heck_box_foc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="36" app:gon_layout_marginRight="10" app:gon_layout_marginTop="10" app:gon_layout_width="36" />
+        <com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/layout_wallpapoer_item_yulan" android:background="@drawable/layout_wallpaper_item_bottom_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:gon_layout_height="72">
+            <com.dangbei.launcher.control.view.FitImageView android:background="@drawable/eye" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="29" app:gon_layout_marginRight="6" app:gon_layout_width="43" />
+            <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预览" app:gon_textSize="32" />
+        </com.dangbei.launcher.control.layout.FitLinearLayout>
+    </com.dangbei.launcher.widget.shimmer.ShimmerLayout>
+</merge>

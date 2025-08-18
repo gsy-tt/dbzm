@@ -1,0 +1,87 @@
+.class public final Lio/reactivex/internal/e/b/i;
+.super Lio/reactivex/internal/e/b/a;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lio/reactivex/internal/e/b/i$a;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lio/reactivex/internal/e/b/a<",
+        "TT;",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final aRX:Lio/reactivex/d/p;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/reactivex/d/p<",
+            "-TT;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lio/reactivex/s;Lio/reactivex/d/p;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/reactivex/s<",
+            "TT;>;",
+            "Lio/reactivex/d/p<",
+            "-TT;>;)V"
+        }
+    .end annotation
+
+    .line 25
+    invoke-direct {p0, p1}, Lio/reactivex/internal/e/b/a;-><init>(Lio/reactivex/s;)V
+
+    .line 26
+    iput-object p2, p0, Lio/reactivex/internal/e/b/i;->aRX:Lio/reactivex/d/p;
+
+    .line 27
+    return-void
+.end method
+
+
+# virtual methods
+.method protected subscribeActual(Lio/reactivex/u;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/reactivex/u<",
+            "-",
+            "Ljava/lang/Boolean;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 31
+    iget-object v0, p0, Lio/reactivex/internal/e/b/i;->aSz:Lio/reactivex/s;
+
+    new-instance v1, Lio/reactivex/internal/e/b/i$a;
+
+    iget-object v2, p0, Lio/reactivex/internal/e/b/i;->aRX:Lio/reactivex/d/p;
+
+    invoke-direct {v1, p1, v2}, Lio/reactivex/internal/e/b/i$a;-><init>(Lio/reactivex/u;Lio/reactivex/d/p;)V
+
+    invoke-interface {v0, v1}, Lio/reactivex/s;->subscribe(Lio/reactivex/u;)V
+
+    .line 32
+    return-void
+.end method

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitView android:background="#1affffff" android:layout_width="wrap_content" android:layout_height="fill_parent" app:gon_layout_width="180" />
+    <com.dangbei.launcher.control.view.FitView android:background="#ff333333" android:layout_width="wrap_content" android:layout_height="fill_parent" app:gon_layout_marginLeft="180" app:gon_layout_width="12" />
+    <com.dangbei.launcher.control.view.FitVerticalRecyclerView android:id="@id/activity_wallpaper_setting_title_rl" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" app:gon_layout_width="192" />
+    <com.dangbei.launcher.control.layout.FitLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:gon_layout_marginLeft="294" app:gon_layout_marginRight="102">
+        <com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:gon_layout_marginLeft="18" app:gon_layout_marginRight="18" app:gon_layout_marginTop="60">
+            <com.dangbei.launcher.control.view.FitTextView android:textStyle="bold" android:textColor="#99f1f1f1" android:id="@id/wallpaper_setting_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="我的图片" android:layout_weight="1.0" app:gon_textSize="42" />
+            <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按" app:gon_layout_marginLeft="210" app:gon_textSize="30" />
+            <com.dangbei.launcher.control.view.FitImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_comment_ok" app:gon_layout_height="30" app:gon_layout_marginLeft="6" app:gon_layout_marginRight="6" app:gon_layout_width="30" />
+            <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认键预览壁纸" app:gon_textSize="30" />
+            <com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wallpaper_setting_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.dangbei.launcher.control.view.FitView android:background="#99f1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="24" app:gon_layout_marginLeft="30" app:gon_layout_marginRight="30" app:gon_layout_width="1" />
+                <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按" app:gon_textSize="30" />
+                <com.dangbei.launcher.control.view.FitImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_comment_menu" app:gon_layout_height="30" app:gon_layout_marginLeft="6" app:gon_layout_marginRight="6" app:gon_layout_width="30" />
+                <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:id="@id/wallpaper_setting_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="菜单键删除图片" app:gon_textSize="30" />
+            </com.dangbei.launcher.control.layout.FitLinearLayout>
+        </com.dangbei.launcher.control.layout.FitLinearLayout>
+        <com.dangbei.launcher.control.layout.FitFrameLayout android:id="@id/activity_wallpaper_setting_item_rl" android:layout_width="fill_parent" android:layout_height="fill_parent" app:gon_layout_marginBottom="40" app:gon_paddingTop="28" />
+    </com.dangbei.launcher.control.layout.FitLinearLayout>
+</com.dangbei.launcher.control.layout.FitFrameLayout>

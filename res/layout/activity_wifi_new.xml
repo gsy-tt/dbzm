@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitTextView android:id="@id/activity_wifi_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="无线网络" app:gon_layout_marginTop="60" app:layout_constraintBottom_toTopOf="@id/activity_wifi_recycler_view" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/set_title_styel" />
+    <com.dangbei.launcher.control.view.FitVerticalRecyclerView android:id="@id/activity_wifi_recycler_view" android:layout_width="0.0dip" android:layout_height="0.0dip" app:gon_layout_width="1260" app:gon_paddingBottom="40" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/activity_wifi_title_tv" />
+    <com.dangbei.launcher.control.layout.FitLottieAnimationView android:id="@id/activity_wifi_loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_height="120" app:gon_layout_width="120" app:layout_constraintCircle="@id/activity_wifi_recycler_view" />
+</android.support.constraint.ConstraintLayout>

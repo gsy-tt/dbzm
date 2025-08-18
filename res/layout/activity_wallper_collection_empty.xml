@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_empty_collection" app:gon_layout_height="125" app:gon_layout_width="125" />
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="此处空空如也，快去挑些精美壁纸吧！" app:gon_layout_marginTop="47" app:gon_textSize="36" />
+</com.dangbei.launcher.control.layout.FitLinearLayout>

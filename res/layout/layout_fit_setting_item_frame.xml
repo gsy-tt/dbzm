@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_fit_settiing_item_general_bg_iv" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/selector_set_item_background_color" android:scaleType="fitXY" app:gon_paddingLeft="30" app:gon_paddingRight="30" />
+    <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_fit_settiing_item_general_iv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerVertical="true" app:gon_layout_height="48" app:gon_layout_marginLeft="84" app:gon_layout_width="48" />
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="@color/select_set_item" android:id="@id/layout_fit_settiing_item_title_tv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_toRightOf="@id/layout_fit_settiing_item_general_iv" android:layout_centerVertical="true" app:gon_layout_marginLeft="24" app:gon_textSize="36" />
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="@color/select_hint_set_item" android:id="@id/layout_fit_settiing_item_explain_tv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_toRightOf="@id/layout_fit_settiing_item_title_tv" android:layout_centerVertical="true" app:gon_layout_marginLeft="24" app:gon_textSize="24" />
+    <ViewStub android:id="@id/layout_fit_setting_item_frame_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</merge>

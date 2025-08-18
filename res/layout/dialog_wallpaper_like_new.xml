@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitFrameLayout android:orientation="vertical" android:background="#e6000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.layout.FitLinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/wallpaper_like_bg" android:background="@drawable/selector_dialog_start_screensaver_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" app:gon_layout_height="556" app:gon_layout_width="1090">
+        <com.dangbei.launcher.control.view.FitTextView android:textStyle="bold" android:textColor="#fff1f1f1" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="壁纸喜好" app:gon_layout_marginBottom="30" app:gon_layout_marginTop="30" app:gon_textSize="40" />
+        <com.dangbei.launcher.control.view.FitView android:background="#1affffff" android:layout_width="fill_parent" android:layout_height="1.0px" app:gon_layout_marginLeft="40" app:gon_layout_marginRight="40" />
+        <com.dangbei.launcher.control.view.FitVerticalRecyclerView android:id="@id/dialog_wallpaper_like_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" app:gon_layout_marginLeft="28" app:gon_layout_marginRight="28" />
+    </com.dangbei.launcher.control.layout.FitLinearLayout>
+</com.dangbei.launcher.control.layout.FitFrameLayout>

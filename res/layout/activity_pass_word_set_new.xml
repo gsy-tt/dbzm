@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitTextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="密码锁" app:gon_layout_marginTop="60" style="@style/set_title_styel" />
+    <com.dangbei.launcher.control.view.FitSettingItemFrameView android:layout_gravity="center_horizontal" android:id="@id/passwordSwitchSet" app:gon_layout_marginTop="48" app:setting_item_icon_focus="@drawable/icon_set_password_lock_foc" app:setting_item_icon_nor="@drawable/icon_set_password_lock_nor" app:setting_item_title="密码锁开关" app:setting_item_type="Button" style="@style/set_item_styel" />
+    <com.dangbei.launcher.control.view.FitSettingItemFrameView android:layout_gravity="center_horizontal" android:id="@id/activity_pass_word_set_iv" app:gon_layout_marginBottom="20" app:setting_item_icon_focus="@drawable/icon_set_password_open_foc" app:setting_item_icon_nor="@drawable/icon_set_password_open_nor" app:setting_item_title="密码设置" app:setting_item_type="OneArrowhead" style="@style/set_item_styel" />
+</com.dangbei.launcher.control.layout.FitLinearLayout>

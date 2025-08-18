@@ -1,0 +1,200 @@
+.class public Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;
+.super Lcom/dangbei/palaemon/layout/DBRelativeLayout;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/dangbei/mvparchitecture/c/a;
+
+
+# instance fields
+.field private viewerAbstractDelegate:Lcom/dangbei/mvparchitecture/c/b;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
+
+    .line 22
+    invoke-direct {p0, p1}, Lcom/dangbei/palaemon/layout/DBRelativeLayout;-><init>(Landroid/content/Context;)V
+
+    .line 23
+    invoke-direct {p0}, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->init()V
+
+    .line 24
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 0
+
+    .line 27
+    invoke-direct {p0, p1, p2}, Lcom/dangbei/palaemon/layout/DBRelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    .line 28
+    invoke-direct {p0}, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->init()V
+
+    .line 29
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 0
+
+    .line 32
+    invoke-direct {p0, p1, p2, p3}, Lcom/dangbei/palaemon/layout/DBRelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    .line 33
+    invoke-direct {p0}, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->init()V
+
+    .line 34
+    return-void
+.end method
+
+.method private init()V
+    .locals 2
+
+    .line 38
+    new-instance v0, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillViewerDelegate;
+
+    invoke-virtual {p0}, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillViewerDelegate;-><init>(Landroid/content/Context;)V
+
+    iput-object v0, p0, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->viewerAbstractDelegate:Lcom/dangbei/mvparchitecture/c/b;
+
+    .line 39
+    return-void
+.end method
+
+
+# virtual methods
+.method public bind(Lcom/dangbei/mvparchitecture/a/a;)Lcom/dangbei/mvparchitecture/c/a;
+    .locals 1
+
+    .line 60
+    iget-object v0, p0, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->viewerAbstractDelegate:Lcom/dangbei/mvparchitecture/c/b;
+
+    invoke-virtual {v0, p1}, Lcom/dangbei/mvparchitecture/c/b;->bind(Lcom/dangbei/mvparchitecture/a/a;)Lcom/dangbei/mvparchitecture/c/a;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bind(Lcom/dangbei/mvparchitecture/a/b;)Lcom/dangbei/mvparchitecture/c/a;
+    .locals 1
+
+    .line 55
+    iget-object v0, p0, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->viewerAbstractDelegate:Lcom/dangbei/mvparchitecture/c/b;
+
+    invoke-virtual {v0, p1}, Lcom/dangbei/mvparchitecture/c/b;->bind(Lcom/dangbei/mvparchitecture/a/b;)Lcom/dangbei/mvparchitecture/c/a;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public cancelLoadingDialog()V
+    .locals 1
+
+    .line 90
+    iget-object v0, p0, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->viewerAbstractDelegate:Lcom/dangbei/mvparchitecture/c/b;
+
+    invoke-virtual {v0}, Lcom/dangbei/mvparchitecture/c/b;->cancelLoadingDialog()V
+
+    .line 91
+    return-void
+.end method
+
+.method public context()Landroid/content/Context;
+    .locals 1
+
+    .line 65
+    iget-object v0, p0, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->viewerAbstractDelegate:Lcom/dangbei/mvparchitecture/c/b;
+
+    invoke-virtual {v0}, Lcom/dangbei/mvparchitecture/c/b;->context()Landroid/content/Context;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected onAttachedToWindow()V
+    .locals 1
+
+    .line 43
+    invoke-super {p0}, Lcom/dangbei/palaemon/layout/DBRelativeLayout;->onAttachedToWindow()V
+
+    .line 44
+    iget-object v0, p0, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->viewerAbstractDelegate:Lcom/dangbei/mvparchitecture/c/b;
+
+    invoke-virtual {v0}, Lcom/dangbei/mvparchitecture/c/b;->onViewerResume()V
+
+    .line 45
+    return-void
+.end method
+
+.method protected onDetachedFromWindow()V
+    .locals 1
+
+    .line 49
+    invoke-super {p0}, Lcom/dangbei/palaemon/layout/DBRelativeLayout;->onDetachedFromWindow()V
+
+    .line 50
+    iget-object v0, p0, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->viewerAbstractDelegate:Lcom/dangbei/mvparchitecture/c/b;
+
+    invoke-virtual {v0}, Lcom/dangbei/mvparchitecture/c/b;->onViewerPause()V
+
+    .line 51
+    return-void
+.end method
+
+.method public showLoadingDialog(I)V
+    .locals 1
+
+    .line 85
+    iget-object v0, p0, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->viewerAbstractDelegate:Lcom/dangbei/mvparchitecture/c/b;
+
+    invoke-virtual {v0, p1}, Lcom/dangbei/mvparchitecture/c/b;->showLoadingDialog(I)V
+
+    .line 86
+    return-void
+.end method
+
+.method public showLoadingDialog(Ljava/lang/String;)V
+    .locals 1
+
+    .line 80
+    iget-object v0, p0, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->viewerAbstractDelegate:Lcom/dangbei/mvparchitecture/c/b;
+
+    invoke-virtual {v0, p1}, Lcom/dangbei/mvparchitecture/c/b;->showLoadingDialog(Ljava/lang/String;)V
+
+    .line 81
+    return-void
+.end method
+
+.method public showToast(I)V
+    .locals 1
+
+    .line 75
+    iget-object v0, p0, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->viewerAbstractDelegate:Lcom/dangbei/mvparchitecture/c/b;
+
+    invoke-virtual {v0, p1}, Lcom/dangbei/mvparchitecture/c/b;->showToast(I)V
+
+    .line 76
+    return-void
+.end method
+
+.method public showToast(Ljava/lang/String;)V
+    .locals 1
+
+    .line 70
+    iget-object v0, p0, Lcom/dangbei/yggdrasill/base/base/viewer/BaseYggdrasillRelativeLayout;->viewerAbstractDelegate:Lcom/dangbei/mvparchitecture/c/b;
+
+    invoke-virtual {v0, p1}, Lcom/dangbei/mvparchitecture/c/b;->showToast(Ljava/lang/String;)V
+
+    .line 71
+    return-void
+.end method

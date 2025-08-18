@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.widget.shimmer.ShimmerLayout android:id="@id/layout_general_item_sfl" android:layout_width="fill_parent" android:layout_height="wrap_content" app:gon_layout_height="276" app:shimmer_auto_start="false">
+        <com.dangbei.launcher.control.layout.FitRelativeLayout android:id="@id/layout_general_item_square_rl" android:background="@drawable/bg_shortcut_plus" android:layout_width="fill_parent" android:layout_height="fill_parent" app:gon_layout_height="276">
+            <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_general_item_icon_iv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" app:gon_layout_height="150" app:gon_layout_marginTop="41" app:gon_layout_width="150" />
+            <include android:id="@id/layout_first_general_item_folder_rl" android:visibility="gone" layout="@layout/layout_general_folder" />
+            <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:id="@id/layout_general_item_subscript_tv" android:background="@drawable/shape_subscript" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:gon_layout_height="34" app:gon_layout_marginRight="66" app:gon_layout_marginTop="24" app:gon_paddingLeft="10" app:gon_paddingRight="10" app:gon_textSize="26" />
+        </com.dangbei.launcher.control.layout.FitRelativeLayout>
+    </com.dangbei.launcher.widget.shimmer.ShimmerLayout>
+    <com.dangbei.launcher.control.view.FitMarqueeTextView android:textColor="#fff1f1f1" android:id="@id/layout_general_item_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_centerHorizontal="true" app:gon_layout_marginTop="203" app:gon_layout_max_width="260" app:gon_textSize="32" />
+    <com.dangbei.launcher.control.view.FitMarqueeTextView android:textColor="#ff333333" android:gravity="center_horizontal" android:id="@id/layout_first_general_focus_title_tv" android:background="@drawable/focus_first_screen_item_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lines="1" android:layout_centerHorizontal="true" app:gon_layout_height="125" app:gon_layout_marginTop="209" app:gon_layout_width="280" app:gon_paddingLeft="32" app:gon_paddingRight="32" app:gon_paddingTop="32" app:gon_textSize="36" />
+</merge>

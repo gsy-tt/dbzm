@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.palaemon.view.DBImageView android:id="@id/file_manager_no_file_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:gon_layout_height="280" app:gon_layout_marginTop="320" app:gon_layout_width="280" />
+    <com.dangbei.palaemon.view.DBTextView android:textColor="@android:color/white" android:id="@id/file_manager_no_file_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/file_manager_no_file_iv" android:layout_centerHorizontal="true" app:gon_layout_marginTop="35" app:gon_textSize="32" />
+</merge>

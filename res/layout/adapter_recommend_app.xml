@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_app_recommend" android:background="@drawable/app_rl_back" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_recommend_focusframe" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/rl_app_recommend_icon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_app_recommend_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/img_app_recommend_installed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_recommend_app_installed" />
+            <ImageView android:id="@id/img_app_recommend_state" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.dangbei.launcher.widget.RoundProgressBar android:id="@id/pb_recommend_app" android:layout_width="fill_parent" android:layout_height="fill_parent" app:max="100" app:roundColor="#bb000000" app:roundProgressColor="#bb000000" app:style="FILL" app:textIsDisplayable="false" />
+            <TextView android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_app_recommend_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" />
+            <TextView android:textColor="#ffffffff" android:id="@id/tv_recommend_text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

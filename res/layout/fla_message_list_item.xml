@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.flames.ui.list.view.MessageListItemView android:id="@id/fla_message_list_item_root" android:layout_width="fill_parent" android:layout_height="fill_parent" app:gon_layout_height="270" app:gon_layout_width="1580"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

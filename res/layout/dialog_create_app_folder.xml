@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.layout.FitRelativeLayout android:id="@id/dialog_create_app_folder_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:gon_layout_width="640">
+        <com.dangbei.launcher.control.view.FitView android:background="@drawable/dialog_edit_app_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:gon_layout_width="580" />
+        <com.dangbei.gonzalez.view.GonEditText android:textColor="#fff1f1f1" android:textColorHint="#80333333" android:gravity="center_vertical" android:id="@id/dialog_create_app_folder_edt" android:background="@drawable/dialog_edit_name_item_bg_focus" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="输入文件夹名称" android:maxLines="1" android:singleLine="true" app:gon_layout_height="60" app:gon_layout_marginLeft="80" app:gon_layout_marginTop="25" app:gon_layout_width="340" app:gon_paddingLeft="32" app:gon_textSize="26" />
+        <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:gravity="center" android:id="@id/dialog_create_app_folder_ftv" android:background="@drawable/dialog_edit_name_item_bg_nor" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="创建" app:gon_layout_height="60" app:gon_layout_marginLeft="440" app:gon_layout_marginTop="25" app:gon_layout_width="120" app:gon_textSize="28" />
+        <com.dangbei.launcher.control.view.FitVerticalRecyclerView android:id="@id/dialog_create_app_folder_rv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_marginTop="100" />
+    </com.dangbei.launcher.control.layout.FitRelativeLayout>
+</com.dangbei.launcher.control.layout.FitRelativeLayout>

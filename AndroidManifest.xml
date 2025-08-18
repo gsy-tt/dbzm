@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.dangbei.tvlauncher">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.dangbei.tvlauncher.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <permission android:name="com.dangbei.tvlauncher.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="com.dangbei.tvlauncher.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.dangbei.tvlauncher.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.dangbei.tvlauncher" android:protectionLevel="signature"/>
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.dangbei.tvlauncher"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_STORAGE"/>
+    <application android:allowBackup="true" android:configChanges="keyboardHidden|orientation|screenSize" android:debuggable="true" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.dangbei.ZMApplication" android:screenOrientation="portrait" android:sharedUserId="android.uid.system" android:supportsRtl="true" android:taskAffinity="com.dangbei.tvlauncher" android:theme="@style/AppThemeNew">
+        <meta-data android:name="api_key" android:value="QrItKQaabhGU57azgFoV3lAx"/>
+        <meta-data android:name="com.dangbei.launcher.util.glide.GlideModuleConfiguration" android:value="GlideModule"/>
+        <activity android:label="@string/app_name" android:name="com.dangbei.launcher.ui.welcome.WelcomeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.dangbei.launcher.ui.main.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppStartTheme" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.MONKEY"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dangbei.launcher.ui.autoclean.AutoCleanActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <service android:name="com.dangbei.launcher.service.HomeKeyEventCatchService">
+            <intent-filter>
+                <action android:name=".Service.homeCatch"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.dangbei.update.view.UpdateDialog" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:name="com.dangbei.downloader.core.DownloadService"/>
+        <activity android:launchMode="singleInstance" android:name="com.dangbei.msg.push.ui.DBMessageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.dangbei.launcher.ui.wallpaper.main.WallpaperSettingActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.wallpaper.preview.PreviewWallpaperActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:exported="true" android:name="com.dangbei.launcher.ui.screensaver.ScreensaverActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.set.SetActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.set.CurrencySetActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.screensaver.ScreensaverSetActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.set.WallpaperAndScreensaverSetActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.set.lock.PasswordSetActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.wallpaper.autoset.WallpaperAutoSetActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.set.wx.WxFastTransmissionSetActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.set.direct.DirectAppActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.set.file.FileFastTransmissionActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.set.wifi.WifiActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.set.AboutActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.screensaver.ScreensaverMyActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.set.u.UTransmissionSetActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:name="com.dangbei.launcher.ui.set.file.FileFastImagePreviewActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.dangbei.launcher.ui.necessary.TvNecessaryActivity" android:screenOrientation="portrait" android:theme="@style/AppSetTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.dangbei.launcher.ui.main.dialog.home.HomeDialogActivity" android:screenOrientation="portrait" android:theme="@style/AppStartThemeTransparent"/>
+        <activity android:launchMode="singleTop" android:name="com.squareup.leakcanary.internal.DisplayLeakActivity" android:screenOrientation="portrait" android:theme="@style/AppStartThemeTransparent"/>
+        <activity android:launchMode="singleTop" android:name="com.skyworth.iptv.Skiptv" android:screenOrientation="portrait" android:theme="@style/AppStartThemeTransparent"/>
+        <activity android:launchMode="singleTop" android:name="com.dangbei.tvlauncher.IndexActivity" android:screenOrientation="portrait" android:theme="@style/AppStartThemeTransparent"/>
+        <service android:name="com.talkingdata.sdk.TDAntiCheatingService" android:process="com.talkingdata.sdk.TDAntiCheatingService">
+            <intent-filter>
+                <action android:name="com.talkingdata.sdk.TDAntiCheatingService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.dangbei.launcher.ui.screensaver.ScreensaverService"/>
+        <meta-data android:name="TD_APP_ID" android:value="7623ADFBA71A4587897D665CB24FE7D6"/>
+        <meta-data android:name="XM_AppID" android:value="xm"/>
+        <meta-data android:name="XM_AppKey" android:value="xm"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="0dffbb7d15a55ca98b1adf31"/>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="develop"/>
+        <meta-data android:name="Baidu_AppKey" android:value="QrItKQaabhGU57azgFoV3lAx"/>
+        <meta-data android:name="euthenia_process" android:value="com.dangbei.tvlauncher"/>
+        <receiver android:name="com.dangbei.euthenia.receiver.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="euthenia_channel" android:value="znds"/>
+        <provider android:authorities="com.dangbei.tvlauncher.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.dangbei.launcher.impl.DbFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <service android:name="com.dangbei.launcher.service.AutoClearAppService"/>
+        <service android:name="com.dangbei.tvlauncher.pingbao.ScreensaverService"/>
+        <receiver android:name="com.dangbei.tvlauncher.receiver.BootReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dangbei.launcher.receiver.SystemEventReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter android:priority="1000">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.ethernet.ETH_STATE_CHANGED"/>
+                <action android:name="mitv.network.ethernet.action.ETHERNET_STATE_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.server.action.NETWORK_STATS_UPDATED"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dangbei.launcher.receiver.BootReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.duokan.duokanplayer.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LETV_SCREENON"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.dangbei.yggdrasill.filemanager.filelist.YggdrasillFileListActivity" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.dangbei.yggdrasill.filemanager.singlefilelist.YggdrasillApkMusicListActivity" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.dangbei.yggdrasill.filemanager.singlefilelist.YggdrasillVideoPictureListActivity" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:exported="true" android:name="com.dangbei.yggdrasill.filemanager.usbinfo.YggdrasillUsbInfoActivity">
+            <intent-filter>
+                <action android:name="mimir.action.activity.file.manager.usb.info"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dangbei.yggdrasill.filemanager.usblist.YggDrasillFileManagerActivity"/>
+        <receiver android:name="com.dangbei.yggdrasill.filemanager.usblist.helper.FileManagerUsbReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_CHECKING"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <activity android:launchMode="singleTop" android:name="com.dangbei.library.permission.PermissionUtils$PermissionActivity" android:screenOrientation="portrait" android:theme="@style/AndroidUtilsAppStartThemeTransparent"/>
+        <provider android:authorities="com.dangbei.tvlauncher.utilcode.provider" android:exported="false" android:grantUriPermissions="true" android:multiprocess="true" android:name="com.dangbei.library.utils.Utils$FileProvider4UtilCode">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <activity android:configChanges="orientation" android:name="com.dangbei.flames.ui.detail.MessageDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:name="com.dangbei.flames.ui.list.MessageListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <service android:name="com.dangbei.flames.phrike.core.DownloadService"/>
+        <service android:name="com.dangbeidbpush.downloader.core.DownloadService"/>
+        <receiver android:name="com.dangbei.msg.push.receiver.AgreementJumpReceiver">
+            <intent-filter>
+                <action android:name="com.dangbei.msg.push.agreement"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="cn.jpush.android.ui.PopWinActivity" android:theme="@style/MyDialogStyle">j</activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.dangbei.tvlauncher"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="cn.jpush.android.service.PushService" android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.dangbei.tvlauncher.DataProvider" android:exported="true" android:name="cn.jpush.android.service.DataProvider"/>
+        <service android:enabled="true" android:exported="true" android:name="cn.jpush.android.service.DaemonService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="com.dangbei.tvlauncher"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.dangbei.tvlauncher"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.AlarmReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.dangbei.msg.push.receiver.JpushTalkReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.dangbei.tvlauncher"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.dangbei.msg.push.receiver.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE"/>
+                <category android:name="com.dangbei.tvlauncher"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":xmpushservice"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":xmpushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":xmpushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.dangbei.msg.push.receiver.XmMessageReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.taobao.accs.ChannelService" android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.ELECTION"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.taobao.accs.data.MsgDistributeService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.taobao.accs.EventReceiver" android:process=":channel">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.taobao.accs.ServiceReceiver" android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.taobao.accs.ChannelService$KernelService" android:process=":channel"/>
+        <service android:exported="true" android:name="org.android.agoo.accs.AgooService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.taobao.agoo.AgooCommondReceiver" android:process=":channel">
+            <intent-filter>
+                <action android:name="com.dangbei.tvlauncher.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.dangbei.msg.push.receiver.DBAppReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.dangbeimarket.downloader.DownloadService"/>
+        <meta-data android:name="palaemonVersion" android:value="1.0.6-SNAPSHOT"/>
+        <activity android:name="com.dangbei.euthenia.ui.style.h5.H5Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.ant.downloader.core.DownloadService"/>
+    </application>
+</manifest>

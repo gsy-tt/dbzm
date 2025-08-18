@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.layout.FitRelativeLayout android:id="@id/dialog_edit_app_folder_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:gon_layout_width="640">
+        <com.dangbei.launcher.control.view.FitView android:background="@drawable/dialog_edit_app_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:gon_layout_width="580" />
+        <com.dangbei.launcher.control.view.FitTextView android:textStyle="bold" android:textColor="#fff1f1f1" android:gravity="center_vertical" android:id="@id/dialog_edit_app_folder_name_ftv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应用归类" app:gon_layout_height="100" app:gon_layout_marginLeft="80" app:gon_textSize="40" />
+        <com.dangbei.launcher.control.view.FitVerticalRecyclerView android:id="@id/dialog_edit_app_folder_rv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gon_layout_marginTop="100" />
+    </com.dangbei.launcher.control.layout.FitRelativeLayout>
+</com.dangbei.launcher.control.layout.FitRelativeLayout>

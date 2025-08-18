@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.layout.FitRelativeLayout android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:gon_layout_height="80" app:gon_layout_width="300"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dangbei.launcher.control.view.FitView android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:alpha="0.1" app:gon_layout_height="1" app:gon_layout_width="580" />
+    <com.dangbei.launcher.control.view.FitImageView android:id="@id/adapter_edit_app_folder_focus_fiv" android:background="@drawable/dialog_edit_name_item_bg_focus" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dangbei.launcher.control.view.FitImageView android:id="@id/adapter_edit_app_folder_icon_fiv" android:background="#80ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" app:gon_layout_height="50" app:gon_layout_marginLeft="80" app:gon_layout_width="50" />
+    <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:id="@id/adapter_edit_app_folder_name_ftv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="置顶显示" android:layout_centerVertical="true" app:gon_layout_marginLeft="160" app:gon_textSize="36" />
+</com.dangbei.launcher.control.layout.FitRelativeLayout>
