@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.dangbei.launcher.control.layout.FitRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <!-- 第一行：3个磁贴居中显示 -->
-    <com.dangbei.launcher.control.view.FitGeneralItemView android:id="@id/adapter_site_edit_page_fg1" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fit_general_item_view_type="2" app:gon_layout_height="324" app:gon_layout_marginLeft="274" app:gon_layout_marginTop="66" app:gon_layout_width="266" />
-    <com.dangbei.launcher.control.view.FitGeneralItemView android:id="@id/adapter_site_edit_page_fg2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fit_general_item_view_type="2" app:gon_layout_height="324" app:gon_layout_marginLeft="540" app:gon_layout_marginTop="66" app:gon_layout_width="266" />
-    <com.dangbei.launcher.control.view.FitGeneralItemView android:id="@id/adapter_site_edit_page_fg3" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fit_general_item_view_type="2" app:gon_layout_height="324" app:gon_layout_marginLeft="806" app:gon_layout_marginTop="66" app:gon_layout_width="266" />
+    <!-- 竖屏适配：最多3个磁贴，居中显示 -->
+    <com.dangbei.launcher.control.view.FitGeneralItemView android:id="@id/adapter_site_edit_page_fg1" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fit_general_item_view_type="2" app:gon_layout_height="280" app:gon_layout_marginLeft="200" app:gon_layout_marginTop="50" app:gon_layout_width="200" />
+    <com.dangbei.launcher.control.view.FitGeneralItemView android:id="@id/adapter_site_edit_page_fg2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fit_general_item_view_type="2" app:gon_layout_height="280" app:gon_layout_marginLeft="450" app:gon_layout_marginTop="50" app:gon_layout_width="200" />
+    <com.dangbei.launcher.control.view.FitGeneralItemView android:id="@id/adapter_site_edit_page_fg3" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fit_general_item_view_type="2" app:gon_layout_height="280" app:gon_layout_marginLeft="700" app:gon_layout_marginTop="50" app:gon_layout_width="200" />
     
-    <!-- 第二行：3个磁贴居中显示 -->
-    <com.dangbei.launcher.control.view.FitGeneralItemView android:id="@id/adapter_site_edit_page_fg6" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fit_general_item_view_type="2" app:gon_layout_height="324" app:gon_layout_marginLeft="274" app:gon_layout_marginTop="332" app:gon_layout_width="266" />
-    <com.dangbei.launcher.control.view.FitGeneralItemView android:id="@id/adapter_site_edit_page_fg7" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fit_general_item_view_type="2" app:gon_layout_height="324" app:gon_layout_marginLeft="540" app:gon_layout_marginTop="332" app:gon_layout_width="266" />
-    <com.dangbei.launcher.control.view.FitGeneralItemView android:id="@id/adapter_site_edit_page_fg8" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fit_general_item_view_type="2" app:gon_layout_height="324" app:gon_layout_marginLeft="806" app:gon_layout_marginTop="332" app:gon_layout_width="266" />
-    
-    <!-- 移除第4、5、9、10个磁贴以避免显示问题 -->
+    <!-- 移除第二行磁贴，只保留第一行最多3个 -->
 </com.dangbei.launcher.control.layout.FitRelativeLayout>

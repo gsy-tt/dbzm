@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.dangbei.launcher.control.view.FitCompatibleViewPagerRecyclerView android:id="@id/layout_second_screen_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingLeft="135" android:paddingRight="135" android:clipToPadding="false" />
-    <com.dangbei.launcher.control.layout.FitLinearLayout android:orientation="vertical" android:id="@id/layout_second_screen_dots_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:gon_layout_marginRight="28" />
+    <!-- 竖屏适配：调整padding使4个图标居中显示 -->
+    <com.dangbei.launcher.control.view.FitCompatibleViewPagerRecyclerView android:id="@id/layout_second_screen_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingLeft="100" android:paddingRight="100" android:paddingTop="50" android:paddingBottom="50" android:clipToPadding="false" />
+    <com.dangbei.launcher.control.layout.FitLinearLayout android:orientation="vertical" android:id="@id/layout_second_screen_dots_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:gon_layout_marginRight="20" />
 </merge>
