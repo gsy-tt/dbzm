@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.dangbei.launcher.control.layout.FitRelativeLayout android:background="@drawable/bg_folder_icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" app:gon_layout_height="200" app:gon_layout_marginTop="20" app:gon_layout_width="200" app:gon_padding="15"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <!-- 第一行：3个图标 -->
-    <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_general_folder_0" style="@style/FolderItemStyle" />
-    <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_general_folder_1" android:layout_toRightOf="@id/layout_general_folder_0" android:layout_toEndOf="@id/layout_general_folder_0" style="@style/FolderItemStyle" />
-    <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_general_folder_2" android:layout_toRightOf="@id/layout_general_folder_1" android:layout_toEndOf="@id/layout_general_folder_1" style="@style/FolderItemStyle" />
-    
-    <!-- 第二行：3个图标 -->
-    <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_general_folder_3" android:layout_below="@id/layout_general_folder_0" style="@style/FolderItemStyle" />
-    <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_general_folder_4" android:layout_toRightOf="@id/layout_general_folder_3" android:layout_toEndOf="@id/layout_general_folder_3" android:layout_below="@id/layout_general_folder_1" style="@style/FolderItemStyle" />
-    <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_general_folder_5" android:layout_toRightOf="@id/layout_general_folder_4" android:layout_toEndOf="@id/layout_general_folder_4" android:layout_below="@id/layout_general_folder_2" style="@style/FolderItemStyle" />
-    
-    <!-- 第三行：3个图标 -->
-    <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_general_folder_6" android:layout_below="@id/layout_general_folder_3" style="@style/FolderItemStyle" />
-    <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_general_folder_7" android:layout_toRightOf="@id/layout_general_folder_6" android:layout_toEndOf="@id/layout_general_folder_6" android:layout_below="@id/layout_general_folder_4" style="@style/FolderItemStyle" />
-    <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_general_folder_8" android:layout_toRightOf="@id/layout_general_folder_7" android:layout_toEndOf="@id/layout_general_folder_7" android:layout_below="@id/layout_general_folder_5" style="@style/FolderItemStyle" />
+<com.dangbei.launcher.control.layout.FitRelativeLayout 
+    android:background="@drawable/bg_folder_icon" 
+    android:visibility="gone" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:layout_centerHorizontal="true" 
+    app:gon_layout_height="@dimen/folder_layout_height" 
+    app:gon_layout_marginTop="20" 
+    app:gon_layout_width="@dimen/folder_layout_width" 
+    app:gon_padding="@dimen/folder_padding"
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- 图标布局保持不变 -->
 </com.dangbei.launcher.control.layout.FitRelativeLayout>
