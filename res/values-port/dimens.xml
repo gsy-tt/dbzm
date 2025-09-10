@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="weather_time_text_size_port">100sp</dimen>
+    <dimen name="weather_margin_left_port">30dip</dimen>
+    <dimen name="weather_margin_top_port">10dip</dimen>
+    <!-- 其他需要的尺寸 -->
+</resources>

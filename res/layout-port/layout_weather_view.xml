@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangbei.launcher.control.base.DBConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+      <!-- 减小时间文本字体大小 -->
+      <com.dangbei.launcher.control.view.FitTextView android:textColor="#fff1f1f1" android:id="@id/layout_first_screen_time_tvs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:shadowColor="#33121212" android:shadowDy="2.0" android:shadowRadius="4.0" app:gon_layout_marginLeft="30" app:gon_layout_marginTop="10" app:gon_textSize="100" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+      
+      <!-- 调整天气图标和温度的位置 -->
+      <com.dangbei.launcher.control.view.FitImageView android:id="@id/layout_first_screen_today_weather_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_weather_default" app:gon_layout_height="70" app:gon_layout_width="70" app:layout_constraintLeft_toLeftOf="@id/layout_first_screen_time_tvs" app:layout_constraintTop_toBottomOf="@id/layout_first_screen_time_tvs" />
+      
+      <!-- 其他组件相应调整 -->
+  </com.dangbei.launcher.control.base.DBConstraintLayout>
